@@ -146,7 +146,7 @@ namespace EloquentSurveillance {
          */
         bool hasSD() {
 #ifdef USE_SD
-            return SD.cardType() != CARD_NONE;
+            return SD_MMC.cardType() != CARD_NONE;
 #else
             return false;
 #endif
