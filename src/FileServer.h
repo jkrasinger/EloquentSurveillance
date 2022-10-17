@@ -10,9 +10,9 @@
 #include <WebServer.h>
 #include <FS.h>
 #ifdef USE_SD
-#include <SD.h>
+#include <SD_MMC.h>
 #include <SPI.h>
-#define ELOQUENTSURVEILLANCE_FILESERVER_FS SD
+#define ELOQUENTSURVEILLANCE_FILESERVER_FS SD_MMC
 #else
 #include <SPIFFS.h>
 #define ELOQUENTSURVEILLANCE_FILESERVER_FS SPIFFS
@@ -57,7 +57,7 @@ namespace EloquentSurveillance {
                     if (filename.indexOf(".jpeg") || filename.indexOf(".jpg")) {
                         html += F("<tr><td>");
                         html += (i++);
-                        html += F("</td><td><a href=\"/view");
+                        html += F("</td><td><a href=\"/view/");
                         html += filename;
                         html += F("\" target=\"_blank\">");
                         html += filename.substring(1);
