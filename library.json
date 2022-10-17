@@ -4,12 +4,12 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eloquentarduino/EloquentSurveillance"
+    "url": "https://github.com/jkrasinger/EloquentSurveillance"
   },
-  "version": "1.0.5",
+  "version": "1.0.0",
   "authors": {
-    "name": "Simone Salerno",
-    "url": "https://github.com/eloquentarduino"
+    "name": "Johann Krasinger",
+    "url": "https://github.com/jkrasinger"
   },
   "frameworks": "arduino",
   "platforms": "*"
